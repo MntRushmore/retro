@@ -92,16 +92,13 @@ skipButton.addEventListener('click', () => {
       let targetY = 0;
   
       document.addEventListener("mousemove", (e) => {
-        // Snap mouse to grid
         targetX = Math.round(e.clientX / gridSize) * gridSize;
         targetY = Math.round(e.clientY / gridSize) * gridSize;
       });
   
       function animate() {
-        // Move head one step toward target
         const head = segments[0];
         if (head.x !== targetX || head.y !== targetY) {
-          // Prioritize horizontal or vertical step (no diagonal)
           if (head.x !== targetX) {
             head.x += gridSize * Math.sign(targetX - head.x);
           } else if (head.y !== targetY) {
@@ -111,7 +108,6 @@ skipButton.addEventListener('click', () => {
   
         head.element.style.transform = `translate(${head.x}px, ${head.y}px)`;
   
-        // Follow-the-leader, each segment moves to the previous segment's position
         for (let i = segments.length - 1; i > 0; i--) {
           const curr = segments[i];
           const prev = segments[i - 1];
@@ -120,7 +116,7 @@ skipButton.addEventListener('click', () => {
           curr.element.style.transform = `translate(${curr.x}px, ${curr.y}px)`;
         }
   
-        setTimeout(() => requestAnimationFrame(animate), 50); // Adjust speed
+        setTimeout(() => requestAnimationFrame(animate), 50);
       }
   
       animate();
