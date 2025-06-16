@@ -231,220 +231,238 @@ button:hover {
   display: none;
 }
 
-#requirements ul{
-    margin-left: 20px;
+#requirements ul {
+  margin-left: 20px;
 }
-  
-  #requirements ul li {
-    font-size: 0.2rem;
-    color: #00ff99;
-    text-shadow: 0 0 1px #00ff99, 0 0 2px #00ff99;
-    margin-bottom: 10px;
-  }
-  
-  #requirements ul li p {
-    font-size: 0.6rem;
-    font-weight: 600;
-    margin: 0;
-    transition: 0.2s ease-in-out;
+
+#requirements ul li {
+  font-size: 0.2rem;
+  color: #00ff99;
+  text-shadow: 0 0 1px #00ff99, 0 0 2px #00ff99;
+  margin-bottom: 10px;
+}
+
+#requirements ul li p {
+  font-size: 0.6rem;
+  font-weight: 600;
+  margin: 0;
+  transition: 0.2s ease-in-out;
+}
+
+#requirements ul li p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+#requirements ul li span {
+  color: #ed3a64;
+  text-shadow: 0 0 1px #ff0059, 0 0 4px #ffa1c2;
+  font-size: 30px;
+}
+
+.tag {
+  font-size: 0.8rem;
+  color: #00ff99;
+  text-shadow: 0 0 1px #00ff99, 0 0 2px #00ff99;
+  padding-bottom: 10px;
+  font-weight: bold;
+  text-align: center;
+  transition: 0.2s ease-in-out;
+}
+
+.faq {
+  display: flex;
+}
+
+.faq div {
+  border: 2px solid #00ff99;
+  padding: 10px;
+}
+
+.faq h2 {
+  font-size: 0.85rem;
+  color: #00ff99;
+  text-shadow: 0 0 1px #00ff99, 0 0 2px #00ff99;
+  margin-bottom: 30px;
+  font-weight: bold;
+  text-align: center;
+  transition: 0.2s ease-in-out;
+}
+
+.faq p {
+  font-size: 0.5rem;
+  color: #00ff99;
+  text-shadow: 0 0 1px #00ff99, 0 0 2px #00ff99;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-align: center;
+  transition: 0.2s ease-in-out;
+  margin-left: 10px;
+}
+
+.faq span {
+  color: #ed3a64;
+  text-shadow: 0 0 1px #ff0059, 0 0 2px #ffa1c2;
+  font-size: 0.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.faq span:hover {
+  text-decoration: underline;
+  letter-spacing: 1px;
+}
+
+.card-grid {
+  display: flex;
+}
+
+.example-card {
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 2px solid #00ff99;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 255, 153, 0.3);
+  width: 20vw;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.example-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 25px rgba(0, 255, 153, 0.5);
+}
+
+.example-card h2 {
+  font-size: 0.6rem;
+  color: #00ffcc;
+}
+
+.example-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  * {
+    font-size: 2rem;
   }
 
-  #requirements ul li p:hover {
-    text-decoration: underline;
-    cursor: pointer;
-    letter-spacing: 1px;
+  .wrapper {
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
   }
 
-  #requirements ul li span{
-    color: #ed3a64;
-    text-shadow: 0 0 1px #ff0059, 0 0 4px #ffa1c2;
-    font-size: 30px;
+  section {
+    min-width: 100vw;
+    height: auto;
+    scroll-snap-align: start;
+    padding: 2rem 1rem;
   }
 
-  .tag{
-    font-size: 0.8rem;
-    color: #00ff99;
-    text-shadow: 0 0 1px #00ff99, 0 0 2px #00ff99;
-    padding-bottom: 10px;
-    font-weight: bold;
-    text-align: center;
-    transition: 0.2s ease-in-out;
+  .buttons {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    position: static;
   }
 
-  .faq{
-    display: flex;
-
-  }
-
-  .faq div{
-    border: 2px solid #00ff99;
-    padding: 10px;
-  }
-
-  .faq h2{
-    font-size: 0.85rem;
-    color: #00ff99;
-    text-shadow: 0 0 1px #00ff99, 0 0 2px #00ff99;
-    margin-bottom: 30px;
-    font-weight: bold;
-    text-align: center;
-    transition: 0.2s ease-in-out;
-  }
-
-  .faq p{
-    font-size: 0.5rem;
-    color: #00ff99;
-    text-shadow: 0 0 1px #00ff99, 0 0 2px #00ff99;
-    margin-bottom: 10px;
-    font-weight: bold;
-    text-align: center;
-    transition: 0.2s ease-in-out;
-    margin-left: 10px;
-  }
-
-  .faq span{
-    color: #ed3a64;
-    text-shadow: 0 0 1px #ff0059, 0 0 2px #ffa1c2;
-    font-size: 0.5rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.2s ease-in-out;
-  }
-
-  .faq span:hover{
-    text-decoration: underline;
-    letter-spacing: 1px;
+  .faq {
+    flex-direction: column;
+    gap: 1rem;
   }
 
   .card-grid {
-    display: flex;
-  }
-  
-  .example-card {
-    background-color: rgba(0, 0, 0, 0.6);
-    border: 2px solid #00ff99;
-    padding: 1rem;
-    border-radius: 12px;
-    box-shadow: 0 0 20px rgba(0, 255, 153, 0.3);
-    width: 20vw;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-  }
-  
-  .example-card:hover {
-    transform: scale(1.03);
-    box-shadow: 0 0 25px rgba(0, 255, 153, 0.5);
-  }
-  
-  .example-card h2 {
-    font-size: 0.6rem;
-    color: #00ffcc;
-  }
-  
-  .example-card img{
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 0.5rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
   }
 
-  @media (max-width: 768px) {
-    * {
-      font-size: 2rem;
-    }
-  
-    .wrapper {
-      flex-direction: column;
-      overflow-x: hidden;
-      overflow-y: auto;
-      scroll-snap-type: y mandatory;
-    }
-  
-    section {
-      min-width: 100vw;
-      height: auto;
-      scroll-snap-align: start;
-      padding: 2rem 1rem;
-    }
-  
-    .buttons {
-      flex-direction: column;
-      gap: 1rem;
-      padding: 1rem;
-      position: static;
-    }
-  
-    .faq {
-      flex-direction: column;
-      gap: 1rem;
-    }
-  
-    .card-grid {
-      flex-direction: column;
-      align-items: center;
-      gap: 1rem;
-    }
-  
-    .example-card {
-      width: 80vw;
-    }
-  
-    .story {
-      width: 100%;
-    }
-  
-    .story-video {
-      height: auto;
-    }
-  
-    .tag {
-      font-size: 0.7rem;
-      padding: 1rem;
-    }
-  
-    .faq p,
-    .faq h2 {
-      text-align: left;
-      font-size: 0.6rem;
-    }
-  
-    .faq span {
-      font-size: 0.6rem;
-    }
-  
-    #requirements ul li p {
-      font-size: 0.7rem;
-    }
-  
-    #requirements ul li span {
-      font-size: 1rem;
-    }
+  .example-card {
+    width: 80vw;
+  }
+
+  .story {
+    width: 100%;
+  }
+
+  .story-video {
+    height: auto;
+  }
+
+  .tag {
+    font-size: 0.7rem;
+    padding: 1rem;
+  }
+
+  .faq p,
+  .faq h2 {
+    text-align: left;
+    font-size: 0.6rem;
+  }
+
+  .faq span {
+    font-size: 0.6rem;
+  }
+
+  #requirements ul li p {
+    font-size: 0.7rem;
+  }
+
+  #requirements ul li span {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  * {
+    font-size: 1.5rem;
+  }
+
+  .button {
+    font-size: 0.5rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .faq h2 {
+    font-size: 0.7rem;
+  }
+
+  .faq p,
+  .faq span {
+    font-size: 0.5rem;
+  }
+
+  .example-card h2 {
+    font-size: 0.5rem;
+  }
+
+  #requirements ul li span {
+    font-size: 0.9rem;
+  }
+}
+
+#snake-trail {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: visible !important;
+    pointer-events: none;
   }
   
-  @media (max-width: 480px) {
-    * {
-      font-size: 1.5rem;
-    }
-  
-    .button {
-      font-size: 0.5rem;
-      padding: 0.5rem 1rem;
-    }
-  
-    .faq h2 {
-      font-size: 0.7rem;
-    }
-  
-    .faq p,
-    .faq span {
-      font-size: 0.5rem;
-    }
-  
-    .example-card h2 {
-      font-size: 0.5rem;
-    }
-  
-    #requirements ul li span {
-      font-size: 0.9rem;
-    }
+
+  .snake-segment {
+    width: 12px;
+    height: 12px;
+    background-color: #00ff99;
+    position: absolute;
+    border-radius: 2px;
+    box-shadow: 0 0 4px #00ff99;
   }
-  
