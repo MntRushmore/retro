@@ -7,10 +7,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow: hidden;
   scrollbar-width: none;
   font-family: vcr, monospace;
-  font-size: 3rem;
 }
 
 .wrapper {
@@ -23,6 +21,14 @@
   position: relative;
   z-index: 1;
 }
+
+body {
+  overflow-x: auto;
+  overflow-y: auto;
+  width: 100vw;
+  height: 100vh;
+}
+
 
 section {
   position: relative;
@@ -40,8 +46,9 @@ section {
 }
 
 section h1 {
-  font-size: 2rem;
+  font-size: 4rem;
   padding: 0.5rem;
+
 }
 
 .crt-vignette {
@@ -207,8 +214,11 @@ section h1 {
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 0.5rem;
+  font-size: 1.5rem;
   z-index: 20;
+  margin-bottom: 50px;
+  margin-right: 20px;
+  margin-left: 20px;
   transition: background-color 0.3s ease;
 }
 
@@ -216,12 +226,13 @@ button:hover {
   background-color: rgba(21, 255, 0, 0.49);
 }
 
-.skip {
+/* .skip {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  bottom: 50px;
+  right: 30px;
   display: none;
-}
+  font-size: 2rem;
+} */
 
 .skip:hover {
   background-color: rgba(0, 0, 0, 0.7);
@@ -236,14 +247,13 @@ button:hover {
 }
 
 #requirements ul li {
-  font-size: 0.2rem;
   color: #00ff99;
   text-shadow: 0 0 1px #00ff99, 0 0 2px #00ff99;
   margin-bottom: 10px;
 }
 
 #requirements ul li p {
-  font-size: 0.6rem;
+  font-size: 1.5rem;
   font-weight: 600;
   margin: 0;
   transition: 0.2s ease-in-out;
@@ -262,7 +272,7 @@ button:hover {
 }
 
 .tag {
-  font-size: 0.8rem;
+  font-size: 2rem;
   color: #00ff99;
   text-shadow: 0 0 1px #00ff99, 0 0 2px #00ff99;
   padding-bottom: 10px;
@@ -273,6 +283,7 @@ button:hover {
 
 .faq {
   display: flex;
+  margin-bottom: 50px;
 }
 
 .faq div {
@@ -281,20 +292,20 @@ button:hover {
 }
 
 .faq h2 {
-  font-size: 0.85rem;
+  font-size: 1.5rem;
   color: #00ff99;
   text-shadow: 0 0 1px #00ff99, 0 0 2px #00ff99;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
   font-weight: bold;
   text-align: center;
   transition: 0.2s ease-in-out;
 }
 
 .faq p {
-  font-size: 0.5rem;
+  font-size: 1.2rem;
   color: #00ff99;
   text-shadow: 0 0 1px #00ff99, 0 0 2px #00ff99;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
   font-weight: bold;
   text-align: center;
   transition: 0.2s ease-in-out;
@@ -304,7 +315,7 @@ button:hover {
 .faq span {
   color: #ed3a64;
   text-shadow: 0 0 1px #ff0059, 0 0 2px #ffa1c2;
-  font-size: 0.5rem;
+  font-size: 1.4rem;
   font-weight: bold;
   cursor: pointer;
   transition: 0.2s ease-in-out;
@@ -346,123 +357,6 @@ button:hover {
   margin-bottom: 0.5rem;
 }
 
-@media (max-width: 768px) {
-  * {
-    font-size: 2rem;
-  }
-
-  .wrapper {
-    flex-direction: column;
-    overflow-x: hidden;
-    overflow-y: auto;
-    scroll-snap-type: y mandatory;
-  }
-
-  section {
-    min-width: 100vw;
-    height: auto;
-    scroll-snap-align: start;
-    padding: 2rem 1rem;
-  }
-
-  .buttons {
-    flex-direction: column;
-    gap: 1rem;
-    padding: 1rem;
-    position: static;
-  }
-
-  .faq {
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .card-grid {
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-  }
-
-  .example-card {
-    width: 80vw;
-  }
-
-  .story {
-    width: 100%;
-  }
-
-  .story-video {
-    height: auto;
-  }
-
-  .tag {
-    font-size: 0.7rem;
-    padding: 1rem;
-  }
-
-  .faq p,
-  .faq h2 {
-    text-align: left;
-    font-size: 0.6rem;
-  }
-
-  .faq span {
-    font-size: 0.6rem;
-  }
-
-  #requirements ul li p {
-    font-size: 0.7rem;
-  }
-
-  #requirements ul li span {
-    font-size: 1rem;
-  }
+section{
+  overflow: auto;
 }
-
-@media (max-width: 480px) {
-  * {
-    font-size: 1.5rem;
-  }
-
-  .button {
-    font-size: 0.5rem;
-    padding: 0.5rem 1rem;
-  }
-
-  .faq h2 {
-    font-size: 0.7rem;
-  }
-
-  .faq p,
-  .faq span {
-    font-size: 0.5rem;
-  }
-
-  .example-card h2 {
-    font-size: 0.5rem;
-  }
-
-  #requirements ul li span {
-    font-size: 0.9rem;
-  }
-}
-
-#snake-trail {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    overflow: visible !important;
-    pointer-events: none;
-  }
-  
-
-  .snake-segment {
-    width: 12px;
-    height: 12px;
-    background-color: #00ff99;
-    position: absolute;
-    border-radius: 2px;
-    box-shadow: 0 0 4px #00ff99;
-  }
