@@ -226,14 +226,6 @@ button:hover {
   background-color: rgba(21, 255, 0, 0.49);
 }
 
-/* .skip {
-  position: absolute;
-  bottom: 50px;
-  right: 30px;
-  display: none;
-  font-size: 2rem;
-} */
-
 .skip:hover {
   background-color: rgba(0, 0, 0, 0.7);
 }
@@ -292,20 +284,20 @@ button:hover {
 }
 
 .faq h2 {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   color: #00ff99;
   text-shadow: 0 0 1px #00ff99, 0 0 2px #00ff99;
-  /* margin-bottom: 30px; */
+  margin-bottom: 20px;
   font-weight: bold;
   text-align: center;
   transition: 0.2s ease-in-out;
+  text-decoration: underline;
 }
 
 .faq p {
   font-size: 1.2rem;
   color: #00ff99;
   text-shadow: 0 0 1px #00ff99, 0 0 2px #00ff99;
-  /* margin-bottom: 10px; */
   font-weight: bold;
   text-align: center;
   transition: 0.2s ease-in-out;
@@ -359,4 +351,8 @@ button:hover {
 
 section{
   overflow: auto;
+}
+
+.toex:hover {
+  background-color: rgb(70,70, 70);
 }
