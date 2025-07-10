@@ -1,173 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
-    <title>Retro-Rewind</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Retro-rewind</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <body>
-      <div class="crt-bulge">
+</head>
+
+<body>
+    <div class="crt-bulge">
         <div class="crt-container">
-          <div class="wrapper">
-            <section id="story">
-              <h1>Retro-Rewind</h1>
-              <div class="story">
-                <video
-                  class="story-video"
-                  id="story-vid"
-                  autoplay
-                  muted
-                  playsinline
-                >
-                  <source
-                    src="https://cdn.pixabay.com/video/2021/11/28/99255-653943157_large.mp4"
-                   />
-                   A video goes here!
-                </video>
-              </div>
-              <div class="buttons">
-                <div class="right"></div>
-                <button class="tohome button right" id="skip">
-                  skip&raquo;&raquo;
-                </button>
-              </div>
-            </section>
-            <section id="home">
-              <h1>The Launch Pad</h1>
-              <p class="tag">
-                Make a cool retro game in 10 hours and get a retro game console!
-              </p>
-              <div class="faq">
-                <div class="whr">
-                  <h2>What is a retro game?</h2>
-                  <p>
-                    A retro game is a video game from or inspired by the golden
-                    age of gaming—think the '80s and '90s. With pixel art,
-                    chiptune music, and nostalgic vibes, these games feel like
-                    time machines made of pixels and neon.
-                  </p>
+            <div class="wrap">
+                <section id="home">
+                    <h1>Retro-Rewind</h1>
+                    <div class="vid">
+                        <video src="https://cdn.pixabay.com/video/2021/11/28/99255-653943157_large.mp4" class="stvid"
+                            id="stvid" autoplay muted playsinline></video>
+                    </div>
+                <div class="but">
+                    <button class="skip">skip</button>
                 </div>
-                <div class="how">
-                  <h2>How do you make a retro game?</h2>
-                  <p>
-                    Making a retro game is like building a digital time machine.
-                    Start with a simple idea—like a pixel hero or a dodgy
-                    spaceship. Add pixel art, sprinkle in chiptune beats, and
-                    make sure the controls feel tight. Keep the gameplay fun,
-                    fast, and nostalgic. Wrap it all in a vintage title
-                    screen—and boom, you’ve got your own 8-bit masterpiece. Need
-                    ideas? Check out the
-                    <span class="toex">Examples page</span>.
-                  </p>
+                </section>
+                <section id="start">
+                    <h1>Press <span class="launch">Start</span> to Begin</h1>
+                    <p class="tag">Make a cool retro game in HTML5, get <span>Steam gift card</span></p>
+                    <div class="faq">
+                        <div class="whr">
+                            <h2>What is a retro game?</h2>
+                            <p>
+                                A retro game is a video game from or inspired by the golden
+                                age of gaming—think the '80s and '90s. With pixel art,
+                                chiptune music, and nostalgic vibes, these games feel like
+                                time machines made of pixels and neon.
+                            </p>
+                        </div>
+                        <div class="how">
+                            <h2>How do you make a retro game?</h2>
+                            <p>
+                                Making a retro game is like building a digital time machine.
+                                Start with a simple idea—like a pixel hero or a dodgy
+                                spaceship. Add pixel art, sprinkle in chiptune beats, and make
+                                sure the controls feel tight. Keep the gameplay fun, fast, and
+                                nostalgic. Wrap it all in a vintage title screen—and boom,
+                                you’ve got your own 8-bit masterpiece. Need ideas? Check out
+                                the
+                                <span class="toex">Examples page</span>.
+                            </p>
+                        </div>
+                    </div>
+                <div class="but">
+                    <button class="next">Requirements &raquo;</button>
                 </div>
-              </div>
-              <div class="buttons">
-                <div class="left"></div>
-                <button class="toreqs button right">
-                  view requirements&raquo;&raquo;
-                </button>
-              </div>
-            </section>
-            <section id="requirements">
-              <h1>Requirements</h1>
-              <ul>
-                <li>
-                  <p>
-                    Must be a Level-17 Human (a.k.a. <span>High Schooler</span>)
-                  </p>
-                </li>
-                <li>
-                  <p>Must be <span>ORIGINAL</span> — no bootlegs, no reruns</p>
-                </li>
-                <li>
-                  <p>
-                    Must radiate <span>RETRO</span> ENERGY — pixels, neon,
-                    nostalgia
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <span>NO CLONES</span> ALLOWED — if it feels like déjà vu,
-                    reboot
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    Must <span>DEFY LIMITS</span> — break the frame, bend the
-                    rules, go infinite
-                  </p>
-                </li>
-                <li>
-                  <p>Use <span>Wakatime</span> to track your time and spend 10 hours making the game</p>
-                </li>
-                <li>
-                  <p>
-                    You have to <span>host</span> your game somewhere along with
-                    your code.
-                  </p>
-                </li>
-              </ul>
+                </section>
+                <section id="req">
+                    <h1>Requirements</h1>
+                    <ul>
+                        <li>
+                            <p class="reqp">
+                                Must be a <span>High-schooler</span>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="reqp">
+                                Your work must be <span>original</span> (including assets)
+                            </p>
+                        </li>
+                        <li>
+                            <p class="reqp">
+                                Must be made in <span>HTML5</span> and <span>JavaScript</span>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="reqp">
+                                Use <span>Wakatime</span> to track your time and spend 10
+                                hours making the game
+                            </p>
+                        </li>
+                        <li>
+                            <p class="reqp">
+                                Most importantly, your game must <span>FEEL RETRO</span>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="reqp">
+                                You have to <span>host</span> your game somewhere along with
+                                your code.
+                            </p>
+                        </li>
+                    </ul>
+                <div class="but">
+                    <button class="previous">&laquo;launch pad</button>
+                    <button class="next">Inspirations&raquo;</button>
+                </div>
+                </section>
+                <section id="ex">
+                    <h1>Inspirations</h1>
+                    <div class="cards">
+                        <div class="card">
+                            <img src="https://platform.polygon.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/15957572/D1fY__nUYAAVQ_3.jpg?quality=90&strip=all&crop=0,3.4613147178592,100,93.077370564282"
+                                alt="Baba is you" />
+                            <div class="cont">
+                                <h2>Baba is you</h2>
+                                <p>
+                                    Baba Is You is a puzzle game where the rules you have to
+                                    follow are present as physical objects in the game world. By
+                                    manipulating the rules, you can change how the game works,
+                                    repurpose things you find in the levels and cause surprising
+                                    interactions!
+                                </p>
+                                <a href="https://hempuli.com/baba/">check here</a>
+                            </div>
+                        </div>
 
-              <div class="buttons">
-                <button class="tohome button left">
-                  &laquo;&laquo;Go Home
-                </button>
-                <button class="toex button right">
-                  Examples&raquo;&raquo;
-                </button>
-              </div>
-            </section>
-            <section id="examples">
-              <h1>Examples</h1>
-              <div class="card-grid">
-                <div class="example-card">
-                  <img src="https://i.gifer.com/RY6p.gif" alt="pong image" />
-                  <h2>Pong</h2>
+                        <div class="card">
+                            <img src="https://supercratebox.com/assets/screenshot_1.png" alt="Supercratebox" />
+                            <div class="cont">
+                                <h2>Super Crate Box</h2>
+                                <p>
+                                    Super Crate Box is a chaotic, high-score chasing arcade shooter where you collect
+                                    crates to switch weapons while fending off endless enemies.
+                                </p>
+                                <a href="https://supercratebox.com/">check here</a>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="https://img.itch.zone/aW1hZ2UvMzc4OTAyLzE4OTc4MjAucG5n/794x1000/jWkVTl.png"
+                                alt="TDD (one of my favourites)" />
+                            <div class="cont">
+                                <h2>Tiny dangerous Dungeons</h2>
+                                <p>
+                                    Tiny Dangerous Dungeons is a Game Boy-inspired mini-Metroidvania filled with hidden
+                                    rooms, power-ups, and tight platforming challenges.
+                                </p>
+                                <a href="https://adventureislands.itch.io/tiny-dangerous-dungeons">check here</a>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="https://img.itch.zone/aW1hZ2UvNDMxLzE5MTEucG5n/794x1000/1%2ByKp3.png"
+                                alt="LOVE" />
+                            <div class="cont">
+                                <h2>LOVE by Fred Wood</h2>
+                                <p>
+                                    LOVE is a retro-styled platformer with precise controls, simple visuals, and brutal
+                                    yet fair level design where every jump matters.
+                                </p>
+                                <a href="https://thatsmytrunks.itch.io/love">check here</a>
+                            </div>
+                        </div>
+                    </div>
+                <div class="but">
+                    <button class="previous">&laquo;Requirements</button>
+                    <button class="next">gallery&raquo;</button>
                 </div>
-                <div class="example-card">
-                  <img
-                    src="https://media.tenor.com/RLrmkvTAs3UAAAAM/retro-tetris.gif"
-                    alt="tetris image"
-                  />
-                  <h2>Tetris</h2>
+                </section>
+                <section id="gal">
+                    <h1>Gallery</h1>
+                    <p>
+                        Submit your work
+                        <a href="https://forms.hackclub.com/retro"><span>HERE</span></a>
+                    </p>
+                <div class="but">
+                    <button class="previous">&laquo;Inspirations</button>
                 </div>
-                <div class="example-card">
-                  <img
-                    src="https://media.tenor.com/V4N-smXOuwUAAAAM/space-invaders-arcade.gif"
-                    alt="Space Invaders image"
-                  />
-                  <h2>Space invaders</h2>
-                </div>
-                <div class="example-card">
-                  <img src="assets/pac.gif" alt="pac-man image" />
-                  <h2>Pac-Man</h2>
-                </div>
-              </div>
-              <div class="buttons">
-                <button class="toreqs button left">
-                  &laquo;&laquo;view requirements
-                </button>
-                <button class="togal button right">
-                  view gallery&raquo;&raquo;
-                </button>
-              </div>
-            </section>
-            <section id="gallery">
-              <h1>Gallery</h1>
-              <div class="buttons">
-                <button class="toex button left">&laquo;&laquo;Examples</button>
-              </div>
-            </section>
-          </div>
-          <div class="crt-overlay"></div>
-          <div class="crt-vignette"></div>
-          <div class="fuzzy-overlay"></div>
+                </section>
+            </div>
+            <div class="crt-overlay"></div>
+            <div class="crt-vignette"></div>
+            <div class="fuzzy-overlay"></div>
         </div>
-      </div>
-      <div id="snake-trail"></div>
-    </body>
-
+        <footer>&copy;Hack Club 2025</footer>
+    </div>
+    <div id="snake-trail"></div>
     <script src="script.js"></script>
-  </body>
+</body>
+
 </html>
