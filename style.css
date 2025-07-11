@@ -507,3 +507,69 @@ h1:hover .launch {
 #start h1{
   transition: 0.5s ease;
 }
+
+.message{
+  text-align: center;
+  color: #00ff99;
+  font-size: 3vw;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+h1.glit {
+  font-size: 5rem;
+  color: #00ff88;
+  text-align: center;
+  position: relative;
+  text-shadow:
+      0 0 5px #00ff88,
+      0 0 10px #00ff88,
+      0 0 20px #00ff88,
+      0 0 40px #00ff88;
+  animation: glit 2s infinite, flicker 1.5s infinite;
+}
+
+@keyframes glit {
+  0% {
+      transform: translate(0);
+  }
+  20% {
+      transform: translate(-2px, 2px);
+      color: red;
+  }
+  40% {
+      transform: translate(2px, -2px);
+      color: lime;
+  }
+  60% {
+      transform: translate(-1px, 1px);
+      color: cyan;
+  }
+  80% {
+      transform: translate(1px, -1px);
+      color: magenta;
+  }
+  100% {
+      transform: translate(0);
+      color: #00ff88;
+  }
+}
+
+.sub{
+  display: inline-block;
+  padding: 10px 20px;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 1.5vw;
+  border: 2px solid #00ff99;
+  background-color: transparent;
+  color: #00ff99;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+.sub:hover {
+  background-color: #00ff99;
+  color: black;
+  box-shadow: 0 0 8px #00ff99, 0 0 16px #00ff99;
+}
